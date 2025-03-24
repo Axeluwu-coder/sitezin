@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Apresentação</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+/*juan é lindao <3*/
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: #ff6600;
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px 0;
+        }
+
+        article {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-img {
+            width: 190px;
+            border-radius: 70%;
+        }
+
+        .post-date {
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            color: #ff6600;
+            text-decoration: none;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        .titulo {
+            text-align: center;
+            padding: 33px;
+            font-size: 30px;
+
+        }
+
+        .h1 {
+            padding: 20px;
+        }
+
+        .h2 {
+            font-size: 40px;
+            padding: 30px;
+        }
+
+        img {
+            border-radius: 0%;
+            margin-bottom: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            cursor: pointer;
+        }
+
+        .h3 {
+            padding-top: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="https://i1.sndcdn.com/artworks-6dQzRJOWW5UpSdmm-R6ouOA-t500x500.jpg" alt="Minha Foto" class="profile-img">
+            <h1 style="text-align: center;" class="titulo">Sobre nós</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\EPA\Documents\codegos\public\view\juan\index.html">Juan Carlos</a></li>
+                <li><a href="C:\Users\EPA\Documents\codegos\public\view\davi\index.html">Davi Marchetti</a></li>
+                <li><a href="C:\Users\EPA\Documents\codegos\public\view\joão\index.html">João Araújo</a></li>
+                <li><a href="C:\Users\EPA\Documents\codegos\public\view\daniel\index.html">Daniel Araújo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p class="h2" style="text-align: center;">Trabalho feito em equipe</p>
+        <p style="font-size: 15px; text-align: center;">sermos Happy :DDDD</p>
+        <img src="C:\Users\EPA\Documents\codegos\assets\imgs\fotos extras\foto cool.jpg" width="500" height="500" class="img" style="padding-top: 30px;">
+        <img src="C:\Users\EPA\Documents\codegos\assets\imgs\fotos extras\Foto cool.png" width="900" height="500" class="img" style="padding-top: 30px;">
+    </main>
+
+    <div>
+        <h3 class="h3">Pear Teto</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZruWj1xNq1GbLDBSCBbJ194OsdDGl1_W9cQ&s" alt="Pear Teto" onmouseover="tocarSom()" onmouseout="pausarSom()">
+
+        <audio id="PearTeto" src="C:\Users\EPA\Documents\codegos\assets\sounds\Kasane Teto.mp3"></audio>
+
+        <script>
+            function tocarSom() {
+                var audio = document.getElementById("PearTeto");
+                audio.play();
+            }
+
+            function pausarSom() {
+                var audio = document.getElementById("PearTeto");
+                audio.pause();
+                audio.currentTime = 0;
+            }
+        </script>
+    </div>
+
+    <footer>
+        <p>Site muito cool</p>
+    </footer>
+</body>
+</html>
